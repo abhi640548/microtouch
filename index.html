@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IT Solution Template</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a href="#" class="logo">MicroTouch</a>
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">Menu</button>
+        <ul id="nav-menu" class="nav__list">
+          <li class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" aria-haspopup="true" aria-expanded="false">Services</button>
+            <ul class="nav__submenu" aria-label="Services">
+              <li><a href="#services">SMO Plans</a></li>
+              <li><a href="#ppc">PPC Plans</a></li>
+              <li><a href="#seo">SEO Plans</a></li>
+              <li><a href="#linkedin">LinkedIn Plans</a></li>
+              <li><a href="#webdev">Web Development</a></li>
+              <li><a href="#gmb">Google My Business</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" aria-haspopup="true" aria-expanded="false">Products</button>
+            <ul class="nav__submenu" aria-label="Products">
+              <li><a href="#products">Identity Shield</a></li>
+              <li><a href="#products">OpsFlow</a></li>
+              <li><a href="#products">Pulse360</a></li>
+              <li><a href="#products">ShieldDesk</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" aria-haspopup="true" aria-expanded="false">Process</button>
+            <ul class="nav__submenu" aria-label="Process">
+              <li><a href="#process">How we work</a></li>
+              <li><a href="#process">Discovery</a></li>
+              <li><a href="#process">Architecture</a></li>
+              <li><a href="#process">Build &amp; Iterate</a></li>
+              <li><a href="#process">Launch &amp; Support</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" aria-haspopup="true" aria-expanded="false">Insights</button>
+            <ul class="nav__submenu" aria-label="Insights">
+              <li><a href="#insights">Zero Trust in 30 Days</a></li>
+              <li><a href="#insights">Shipping without Surprises</a></li>
+              <li><a href="#insights">From On-Prem to Cloud</a></li>
+            </ul>
+          </li>
+          <li class="nav__item nav__item--dropdown">
+            <button class="nav__trigger" aria-haspopup="true" aria-expanded="false">Contact</button>
+            <ul class="nav__submenu" aria-label="Contact">
+              <li><a href="#contact">Book a call</a></li>
+              <li><a href="#contact">Request enquiry</a></li>
+              <li><a href="#contact">Back to top</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="topbar__actions">
+        <button class="btn ghost" data-scroll="#insights">View Insights</button>
+        <button class="btn" data-open-modal="enquiry-modal">Book a Call</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">Modern IT solutions for local business</p>
+          <h1>Design, build, and scale digital products without the friction.</h1>
+          <p class="lede">From cloud architecture to enterprise-grade support, we deliver predictable outcomes with a human-first approach.</p>
+          <div class="hero__actions">
+            <button class="btn" data-open-modal="enquiry-modal">Start a Project</button>
+            <button class="btn ghost" data-scroll="#products">Explore Products</button>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__value">250+</span>
+              <span class="stat__label">Projects delivered</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">99.9%</span>
+              <span class="stat__label">Uptime for managed clients</span>
+            </div>
+            <div class="stat">
+              <span class="stat__value">45</span>
+              <span class="stat__label">Specialists on demand</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <div class="panel">
+            <div class="panel__header">Live Status</div>
+            <div class="panel__body">
+              <div class="status">
+                <span class="pill pill--green"></span>
+                <span>Cloud uptime</span>
+                <strong>99.9%</strong>
+              </div>
+              <div class="status">
+                <span class="pill pill--blue"></span>
+                <span>Tickets resolved</span>
+                <strong>1,248 this month</strong>
+              </div>
+              <div class="status">
+                <span class="pill pill--amber"></span>
+                <span>Deployments</span>
+                <strong>312 this week</strong>
+              </div>
+            </div>
+            <div class="panel__footer">
+              <p>Integrate your API here to surface live telemetry or purchasing status.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">What Prits Can Do For You</p>
+          <h2>Our Service Plans</h2>
+          <p class="lede">Comprehensive digital marketing and development solutions tailored to your business needs.</p>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Request a proposal</button>
+      </div>
+
+      <div class="container plans">
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">Social Media Optimization (SMO)</p>
+              <h3>Basic Plan</h3>
+              <p class="plan__price">$350 <span>/month</span></p>
+            </div>
+            <span class="badge">Starter</span>
+          </div>
+          <p class="plan__summary">50 Hours · 10 Monthly postings · 10 Analytics tracking</p>
+          <ul class="plan__features">
+            <li>Competitor analysis</li>
+            <li>Strategy formation &amp; Hashtag promotion</li>
+            <li>Monthly creative creation</li>
+            <li>Account Management</li>
+            <li>Engagement with communities &amp; groups</li>
+            <li>Network build-up</li>
+            <li>Engagement with third-party posts</li>
+            <li>Content optimization</li>
+            <li>Paid Promotion (Budget estimate, Campaign setup, Ad creative)</li>
+            <li>Remarketing (Audience lists, Ad creatives, Optimization)</li>
+            <li>Customer support (Phone, Email)</li>
+            <li>Additional: YouTube promotion, WhatsApp marketing, LinkedIn promotion</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Basic</button>
+        </article>
+
+        <article class="plan plan--highlight">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">Social Media Optimization (SMO)</p>
+              <h3>Bronze Plan</h3>
+              <p class="plan__price">$550 <span>/month</span></p>
+            </div>
+            <span class="badge badge--accent">Most Popular</span>
+          </div>
+          <p class="plan__summary">70 Hours · 15 Monthly postings · 15 Analytics tracking</p>
+          <ul class="plan__features">
+            <li>Competitor analysis</li>
+            <li>Strategy formation &amp; Hashtag promotion</li>
+            <li>Monthly creative creation</li>
+            <li>Account Management</li>
+            <li>Engagement with communities &amp; groups</li>
+            <li>Network build-up</li>
+            <li>Engagement with third-party posts</li>
+            <li>Content optimization</li>
+            <li>Paid Promotion (same features)</li>
+            <li>Remarketing (same features)</li>
+            <li>Customer support (Phone, Email)</li>
+            <li>Additional: Google My Business optimization, Blog posting</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Bronze</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">Social Media Optimization (SMO)</p>
+              <h3>Platinum Plan</h3>
+              <p class="plan__price">$800 <span>/month</span></p>
+            </div>
+            <span class="badge">Premium</span>
+          </div>
+          <p class="plan__summary">130 Hours · 20 Monthly postings · 20 Analytics tracking</p>
+          <ul class="plan__features">
+            <li>Competitor analysis</li>
+            <li>Strategy formation &amp; Hashtag promotion</li>
+            <li>Monthly creative creation</li>
+            <li>Account Management</li>
+            <li>Engagement with communities &amp; groups</li>
+            <li>Network build-up</li>
+            <li>Engagement with third-party posts</li>
+            <li>Content optimization</li>
+            <li>Paid Promotion (same features)</li>
+            <li>Remarketing (same features)</li>
+            <li>Customer support (Phone, Email)</li>
+            <li>Additional: Influencer collaboration, Paid Ads on YouTube, Lead generation campaigns</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Platinum</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="ppc" class="section alt">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Pay-Per-Click (PPC) Advertising</p>
+          <h2>Performance-focused PPC plans</h2>
+          <p class="lede">Data-driven campaigns, transparent reporting, and relentless optimization across major ad networks.</p>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Plan a campaign</button>
+      </div>
+
+      <div class="container plans">
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">PPC Advertising</p>
+              <h3>Basic Plan</h3>
+              <p class="plan__price">$350 <span>/month</span></p>
+            </div>
+            <span class="badge">Setup Included</span>
+          </div>
+          <p class="plan__summary">Free Trial: 15 Days · Budget: $0–$2,999 · Full optimizations: 1.5 Month</p>
+          <ul class="plan__features">
+            <li>Ad Groups: Up to 7 · Ads/Group: 4 · Keywords: Up to 75</li>
+            <li>Negative Keywords</li>
+            <li>Conversion Tracking + Funnel Reporting</li>
+            <li>Monthly Reporting + Custom Dashboard</li>
+            <li>No Contracts</li>
+            <li>Ad Networks: Google, Bing</li>
+            <li>Mobile Ads + Responsive Ads</li>
+            <li>Call Extensions, Sitelink Extensions</li>
+            <li>Remarketing</li>
+            <li>Monthly Conference Calls</li>
+            <li>Display / Image Ads + Video Ads</li>
+            <li>Additional: A/B testing, CRM Integration, Advanced Targeting</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Basic PPC</button>
+        </article>
+
+        <article class="plan plan--highlight">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">PPC Advertising</p>
+              <h3>Gold Plan</h3>
+              <p class="plan__price">$550 <span>/month</span></p>
+            </div>
+            <span class="badge badge--accent">Most Popular</span>
+          </div>
+          <p class="plan__summary">Free Trial: 15 Days · Budget: $3,000–$5,000 · Full optimizations: 2.5 Month</p>
+          <ul class="plan__features">
+            <li>Ad Groups: Up to 15 · Ads/Group: 5 · Keywords: Up to 150</li>
+            <li>Negative Keywords</li>
+            <li>Conversion Tracking + Funnel Reporting</li>
+            <li>Monthly Reporting + Custom Dashboard</li>
+            <li>No Contracts</li>
+            <li>Ad Networks: Google, Bing, Yahoo, FB</li>
+            <li>Mobile Ads + Responsive Ads</li>
+            <li>Call Extensions, Sitelink Extensions</li>
+            <li>Remarketing</li>
+            <li>Monthly Conference Calls</li>
+            <li>Display / Image Ads + Video Ads</li>
+            <li>Additional: A/B testing, Lead Generation Tracking, Advanced Targeting</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Gold PPC</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">PPC Advertising</p>
+              <h3>Platinum Plan</h3>
+              <p class="plan__price">$800 <span>/month</span></p>
+            </div>
+            <span class="badge">Enterprise</span>
+          </div>
+          <p class="plan__summary">Free Trial: 15 Days · Budget: $5,000–$7,000 · Full optimizations: 3.5 Month</p>
+          <ul class="plan__features">
+            <li>Ad Groups: Up to 25 · Ads/Group: 6 · Keywords: Up to 300</li>
+            <li>Negative Keywords</li>
+            <li>Conversion Tracking + Funnel Reporting</li>
+            <li>Monthly Reporting + ROI Dashboard</li>
+            <li>No Contracts</li>
+            <li>Ad Networks: Google, Bing, Yahoo, FB, LinkedIn</li>
+            <li>Mobile Ads + Responsive Ads</li>
+            <li>Call Extensions, Sitelink Extensions</li>
+            <li>Remarketing</li>
+            <li>Monthly Conference Calls</li>
+            <li>Display / Image Ads + Video Ads + A/B Testing</li>
+            <li>Additional: CRM Integration, Advanced Targeting, Multi-channel Retargeting</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Platinum PPC</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="seo" class="section">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Search Engine Optimization (SEO)</p>
+          <h2>Organic growth plans</h2>
+          <p class="lede">Technical strength, AI-driven insights, and content optimization to lift your rankings and revenue.</p>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Plan SEO strategy</button>
+      </div>
+
+      <div class="container plans">
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">SEO</p>
+              <h3>Basic</h3>
+              <p class="plan__price">$799 <span>/month</span></p>
+            </div>
+            <span class="badge">Core</span>
+          </div>
+          <p class="plan__summary">60 hours/month · 50 keywords · 50 backlinks · 6 landing pages optimized</p>
+          <ul class="plan__features">
+            <li>Technical SEO enhancements</li>
+            <li>Website SEO audit &amp; fixes + Advanced AI audit</li>
+            <li>Pre-optimization analysis + Extended competitor mapping</li>
+            <li>Competitor analysis &amp; strategy + Predictive gap analysis</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Basic SEO</button>
+        </article>
+
+        <article class="plan plan--highlight">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">SEO</p>
+              <h3>Bronze</h3>
+              <p class="plan__price">$1299 <span>/month</span></p>
+            </div>
+            <span class="badge badge--accent">Popular</span>
+          </div>
+          <p class="plan__summary">Enhanced Basic features with more keywords and backlinks</p>
+          <ul class="plan__features">
+            <li>Advanced content optimization</li>
+            <li>Local SEO enhancements</li>
+            <li>Social media integration</li>
+            <li>Monthly reporting</li>
+            <li>Priority support</li>
+            <li>Extended analysis</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Bronze SEO</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">SEO</p>
+              <h3>Gold</h3>
+              <p class="plan__price">$1699 <span>/month</span></p>
+            </div>
+            <span class="badge">Advanced</span>
+          </div>
+          <p class="plan__summary">All Bronze features plus AI and multi-channel depth</p>
+          <ul class="plan__features">
+            <li>Advanced AI optimization</li>
+            <li>Multi-channel integration</li>
+            <li>Custom dashboard</li>
+            <li>Predictive analytics</li>
+            <li>Voice search optimization</li>
+            <li>Advanced reporting</li>
+            <li>Dedicated account manager</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Gold SEO</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">SEO</p>
+              <h3>Platinum</h3>
+              <p class="plan__price">$2499 <span>/month</span></p>
+            </div>
+            <span class="badge">Enterprise</span>
+          </div>
+          <p class="plan__summary">All Gold features with enterprise-grade depth</p>
+          <ul class="plan__features">
+            <li>Enterprise-level optimization</li>
+            <li>AI-powered insights</li>
+            <li>Custom integrations</li>
+            <li>Advanced automation</li>
+            <li>ROI tracking</li>
+            <li>White-label reporting</li>
+            <li>24/7 priority support</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Platinum SEO</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="linkedin" class="section alt">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">LinkedIn Marketing Services</p>
+          <h2>Pipeline-focused LinkedIn plans</h2>
+          <p class="lede">Audience targeting, thoughtful follow-ups, and reporting to grow reach and leads.</p>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Plan LinkedIn campaign</button>
+      </div>
+
+      <div class="container plans">
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">LinkedIn Marketing</p>
+              <h3>Bronze Plan</h3>
+              <p class="plan__price">$350 <span>/month</span></p>
+            </div>
+            <span class="badge">Starter</span>
+          </div>
+          <p class="plan__summary">Target list: 1500+ · 5 organic posts (Personal &amp; Business)</p>
+          <ul class="plan__features">
+            <li>LinkedIn invites &amp; InMail: Enhanced</li>
+            <li>3 level follow-up</li>
+            <li>CSV file for connections (expanded)</li>
+            <li>Smart auto-cut if client responds</li>
+            <li>Track followers, engagement, leads + advanced insights</li>
+            <li>Additional: Sales Navigator integration, LinkedIn Ads support</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Bronze LinkedIn</button>
+        </article>
+
+        <article class="plan plan--highlight">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">LinkedIn Marketing</p>
+              <h3>Gold Plan</h3>
+              <p class="plan__price">$550 <span>/month</span></p>
+            </div>
+            <span class="badge badge--accent">Popular</span>
+          </div>
+          <p class="plan__summary">Target list: 2000+ · 8 organic posts (Personal &amp; Business)</p>
+          <ul class="plan__features">
+            <li>LinkedIn invites &amp; InMail: 900</li>
+            <li>3 level follow-up</li>
+            <li>CSV file for connections (expanded)</li>
+            <li>Smart auto-cut if client responds</li>
+            <li>Track followers, engagement, leads + ROI reporting</li>
+            <li>Additional: CRM integration, Influencer outreach</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Gold LinkedIn</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">LinkedIn Marketing</p>
+              <h3>Platinum Plan</h3>
+              <p class="plan__price">$800 <span>/month</span></p>
+            </div>
+            <span class="badge">Enterprise</span>
+          </div>
+          <p class="plan__summary">Target list: 2500+ · 12 organic posts (Personal &amp; Business)</p>
+          <ul class="plan__features">
+            <li>LinkedIn invites &amp; InMail: 1500</li>
+            <li>3 level follow-up</li>
+            <li>CSV file for connections (expanded)</li>
+            <li>Smart auto-cut if client responds</li>
+            <li>Track followers, engagement, leads + advanced ROI reporting</li>
+            <li>Additional: LinkedIn Ads management, Profile optimization, Advanced targeting</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Platinum LinkedIn</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="webdev" class="section">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Web Development Services</p>
+          <h2>Build and evolve your web presence</h2>
+          <p class="lede">From CMS builds to custom frameworks with hosting, emails, and ongoing maintenance baked in.</p>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Plan your build</button>
+      </div>
+
+      <div class="container plans">
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">Web Development</p>
+              <h3>Silver Plan</h3>
+              <p class="plan__price">$400 <span>/month</span></p>
+            </div>
+            <span class="badge">Starter</span>
+          </div>
+          <p class="plan__summary">Partially custom design (1 iteration) · Responsive · WP/Joomla/C5/Drupal</p>
+          <ul class="plan__features">
+            <li>Back-End User Management</li>
+            <li>GUI Admin Panel</li>
+            <li>Search Engine Friendly Structure</li>
+            <li>Conversion Forms – up to 3</li>
+            <li>Content Migration</li>
+            <li>Web Hosting</li>
+            <li>Hosted Emails – 25</li>
+            <li>Web maintenance work – 5 hours/month</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Silver Web</button>
+        </article>
+
+        <article class="plan plan--highlight">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">Web Development</p>
+              <h3>Gold Plan</h3>
+              <p class="plan__price">$800 <span>/month</span></p>
+            </div>
+            <span class="badge badge--accent">Popular</span>
+          </div>
+          <p class="plan__summary">Custom design (up to 2 iterations) · Responsive · WP/Joomla/C5/Drupal/Magento/Shopify</p>
+          <ul class="plan__features">
+            <li>Custom Blog</li>
+            <li>CMS Updates – up to 6 months</li>
+            <li>Social Logins</li>
+            <li>Shopping Cart</li>
+            <li>Newsletter Module</li>
+            <li>Conversion Forms – up to 7</li>
+            <li>Products Migration – up to 500</li>
+            <li>Hosted Emails – 50</li>
+            <li>Web maintenance work – 10 hours/month</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Gold Web</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">Web Development</p>
+              <h3>Premium Plan</h3>
+              <p class="plan__price">$1800 <span>/month</span></p>
+            </div>
+            <span class="badge">Enterprise</span>
+          </div>
+          <p class="plan__summary">Custom design (up to 4 iterations) + new logo + HTML email templates</p>
+          <ul class="plan__features">
+            <li>Custom Framework / WordPress / Magento / Shopify</li>
+            <li>Custom Blog</li>
+            <li>CMS Updates – up to 12 months</li>
+            <li>Shopping Cart</li>
+            <li>Dealer/Affiliate Section</li>
+            <li>Google eCommerce Tracking</li>
+            <li>Conversion Forms – up to 12</li>
+            <li>Products Migration – up to 2000</li>
+            <li>Hosted Emails – 200</li>
+            <li>Web maintenance work – 25 hours/month</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Premium Web</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="gmb" class="section alt">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Google My Business Services</p>
+          <h2>Local visibility and reputation</h2>
+          <p class="lede">End-to-end GMB analysis, optimization, off-page authority, and transparent reporting.</p>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Optimize GMB</button>
+      </div>
+
+      <div class="container plans">
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">GMB Services</p>
+              <h3>Bronze Plan</h3>
+              <p class="plan__price">$350 <span>/month</span></p>
+            </div>
+            <span class="badge">Starter</span>
+          </div>
+          <p class="plan__summary">Keywords: 5 · One-Time GMB Analysis · Full pre-optimization assessment</p>
+          <ul class="plan__features">
+            <li>Pre-Optimization Analysis (competitors, geo keywords, baseline ranking, categories, opening date, contact info, social profiles, service areas, content, hours)</li>
+            <li>GMB Optimization (description, content, categories, opening date, contact info, socials, service areas, hours, special hours, business info, accessibility/amenities/crowd/planning/service options, FAQ creation)</li>
+            <li>Off-Page GMB Optimization: Article writing 1, submissions 1, marketing 5, local directories/classifieds 5, business listings 2, Google Places citations 1, blog writing 1, submission 1, marketing 5, GMB image sharing 5, social bookmarking 5, GMB Q&A posts 5, profile creation 3, review collection 1, reviews (client-provided) 5</li>
+            <li>Reports: Monthly GMB analytics, keyword ranking, off-page submission, review, GMB post</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Bronze GMB</button>
+        </article>
+
+        <article class="plan plan--highlight">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">GMB Services</p>
+              <h3>Gold Plan</h3>
+              <p class="plan__price">$550 <span>/month</span></p>
+            </div>
+            <span class="badge badge--accent">Popular</span>
+          </div>
+          <p class="plan__summary">Keywords: 10 · One-Time GMB Analysis · Full pre-optimization assessment</p>
+          <ul class="plan__features">
+            <li>Pre-Optimization Analysis (competitors, geo keywords, baseline ranking, categories, opening date, contact info, social profiles, service areas, content, hours)</li>
+            <li>GMB Optimization (description, content, categories, opening date, contact info, socials, service areas, hours, special hours, business info, accessibility/amenities/crowd/planning/service options, FAQ creation)</li>
+            <li>Off-Page GMB Optimization: Article writing 2, submissions 5, marketing 10, local directories/classifieds 10, business listings 5, Google Places citations 2, blog writing 2, submission 5, marketing 10, GMB image sharing 10, social bookmarking 10, GMB Q&A posts 10, profile creation 6, review collection 1, reviews (client-provided) 10</li>
+            <li>Reports: Monthly GMB analytics, keyword ranking, off-page submission, review, GMB post</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Gold GMB</button>
+        </article>
+
+        <article class="plan">
+          <div class="plan__header">
+            <div>
+              <p class="eyebrow">GMB Services</p>
+              <h3>Platinum Plan</h3>
+              <p class="plan__price">$800 <span>/month</span></p>
+            </div>
+            <span class="badge">Enterprise</span>
+          </div>
+          <p class="plan__summary">Keywords: 15 · One-Time GMB Analysis · Full pre-optimization assessment</p>
+          <ul class="plan__features">
+            <li>Pre-Optimization Analysis (competitors, geo keywords, baseline ranking, categories, opening date, contact info, social profiles, service areas, content, hours)</li>
+            <li>GMB Optimization (description, content, categories, opening date, contact info, socials, service areas, hours, special hours, business info, accessibility/amenities/crowd/planning/service options, FAQ creation)</li>
+            <li>Off-Page GMB Optimization: Article writing 3, submissions 10, marketing 15, local directories/classifieds 20, business listings 10, Google Places citations 4, blog writing 3, submission 10, marketing 15, GMB image sharing 15, social bookmarking 20, GMB Q&A posts 15, profile creation 10, review collection 2, reviews (client-provided) 15</li>
+            <li>Reports: Monthly GMB analytics, keyword ranking, off-page submission, review, GMB post</li>
+          </ul>
+          <button class="btn full" data-open-modal="enquiry-modal">Choose Platinum GMB</button>
+        </article>
+      </div>
+    </section>
+
+
+    <section id="products" class="section alt">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Featured products</p>
+          <h2>Prebuilt accelerators ready to drop into your stack.</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Product categories">
+          <button class="chip active" data-filter="all">All</button>
+          <button class="chip" data-filter="security">Security</button>
+          <button class="chip" data-filter="automation">Automation</button>
+          <button class="chip" data-filter="analytics">Analytics</button>
+        </div>
+      </div>
+      <div class="container cards four-up" id="product-grid">
+        <article class="card product" data-category="security">
+          <div class="card__header">
+            <h3>Identity Shield</h3>
+          </div>
+          <p>Centralized identity governance with adaptive MFA and audit-ready reports.</p>
+          <button class="btn small" data-open-modal="enquiry-modal">Request demo</button>
+        </article>
+        <article class="card product" data-category="automation">
+          <div class="card__header">
+            <h3>OpsFlow</h3>
+          </div>
+          <p>Runbooks, approvals, and deployment pipelines with policy enforcement.</p>
+          <button class="btn small" data-open-modal="enquiry-modal">Start trial</button>
+        </article>
+        <article class="card product" data-category="analytics">
+          <div class="card__header">
+            <h3>Pulse360</h3>
+          </div>
+          <p>Unified observability with alerts, SLOs, and executive-ready dashboards.</p>
+          <button class="btn small" data-open-modal="enquiry-modal">View details</button>
+        </article>
+        <article class="card product" data-category="security">
+          <div class="card__header">
+            <h3>ShieldDesk</h3>
+          </div>
+          <p>Security service desk with automated triage, playbooks, and SIEM hooks.</p>
+          <button class="btn small" data-open-modal="enquiry-modal">Talk to sales</button>
+        </article>
+      </div>
+    </section>
+
+    <section id="process" class="section">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">How we work</p>
+          <h2>Transparent steps from discovery to go-live.</h2>
+        </div>
+        <button class="btn ghost" data-scroll="#contact">See engagement</button>
+      </div>
+      <div class="container timeline">
+        <div class="step">
+          <div class="step__number">01</div>
+          <div>
+            <h3>Discovery</h3>
+            <p>Workshops to clarify goals, constraints, and success metrics.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">02</div>
+          <div>
+            <h3>Architecture</h3>
+            <p>Design review with security, cost, and scalability baked in.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">03</div>
+          <div>
+            <h3>Build & Iterate</h3>
+            <p>Agile delivery with demos, QA, and observability from day one.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step__number">04</div>
+          <div>
+            <h3>Launch & Support</h3>
+            <p>Cutover, hypercare, and managed support with clear SLAs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="insights" class="section alt">
+      <div class="container section__header">
+        <div>
+          <p class="eyebrow">Insights</p>
+          <h2>Fresh thinking on delivery, security, and operations.</h2>
+        </div>
+        <button class="btn ghost" data-open-modal="enquiry-modal">Subscribe</button>
+      </div>
+      <div class="container cards three-up">
+        <article class="card">
+          <h3>Zero Trust in 30 Days</h3>
+          <p>Practical steps to modernize identity, devices, and data access.</p>
+          <a class="link" href="#">Read article</a>
+        </article>
+        <article class="card">
+          <h3>Shipping without Surprises</h3>
+          <p>How to bake observability and QA into every release cadence.</p>
+          <a class="link" href="#">Read article</a>
+        </article>
+        <article class="card">
+          <h3>From On-Prem to Cloud</h3>
+          <p>Migration playbook with cost controls and security guardrails.</p>
+          <a class="link" href="#">Read article</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container cta">
+        <div>
+          <p class="eyebrow">Ready when you are</p>
+          <h2>Need a proposal or a product demo?</h2>
+          <p>Tell us what you are exploring. We will connect you with the right specialist.</p>
+        </div>
+        <div class="cta__actions">
+          <button class="btn" data-open-modal="enquiry-modal">Request enquiry</button>
+          <button class="btn ghost" data-scroll="#hero">Back to top</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#" class="logo">MicroTouch</a>
+        <p>IT services and product accelerators for teams that need reliable delivery.</p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <h4>Company</h4>
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#insights">Insights</a>
+        </div>
+        <div>
+          <h4>Resources</h4>
+          <a href="#">Status</a>
+          <a href="#">Security</a>
+          <a href="#">Support</a>
+        </div>
+      </div>
+      <div>
+        <h4>Stay in touch</h4>
+        <button class="btn small" data-open-modal="enquiry-modal">Talk to us</button>
+      </div>
+    </div>
+    <div class="container footer__meta">
+      <span>© 2025 MicroTouch. All rights reserved.</span>
+      <div class="footer__meta-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal" id="enquiry-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="enquiry-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__content">
+      <button class="modal__close" aria-label="Close" data-close-modal>×</button>
+      <p class="eyebrow" id="enquiry-title">Enquiry</p>
+      <h3>Tell us about your project</h3>
+      <form class="form" id="enquiry-form">
+        <label>
+          <span>Full name</span>
+          <input name="name" type="text" placeholder="Jane Doe" required />
+        </label>
+        <label>
+          <span>Work email</span>
+          <input name="email" type="email" placeholder="you@company.com" required />
+        </label>
+        <label>
+          <span>Interest</span>
+          <select name="interest" required>
+            <option value="">Select one</option>
+            <option value="cloud">Cloud modernization</option>
+            <option value="product">Product engineering</option>
+            <option value="managed">Managed IT</option>
+            <option value="security">Security</option>
+            <option value="demo">Product demo</option>
+          </select>
+        </label>
+        <label>
+          <span>Details</span>
+          <textarea name="details" rows="3" placeholder="What problem are you solving?" required></textarea>
+        </label>
+        <button type="submit" class="btn full">Submit enquiry</button>
+        <p class="form__hint">Hook this form to your API to create requests or start purchases.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
